@@ -2,6 +2,7 @@
   "name": "webapp",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://watchawin156.github.io/grade185/",
   "type": "module",
   "scripts": {
     "dev": "vite",

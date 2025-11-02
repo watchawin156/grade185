@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HealthOverview from './pages/HealthOverview';
 import TeacherDashboard from './pages/TeacherDashboard';
@@ -12,7 +12,7 @@ import YearlyAttendanceSummary from './pages/YearlyAttendanceSummary';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<TeacherDashboard />} />
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="attendance/summary" element={<YearlyAttendanceSummary />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
